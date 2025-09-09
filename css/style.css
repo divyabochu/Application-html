@@ -1,0 +1,188 @@
+.main-header
+{
+    text-align: center;
+    color:brown;
+    background-color:darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    padding: 18px;
+    width:100%;
+    box-sizing: border-box;
+    
+
+}
+.main-header.logo
+{
+ width: 55px;
+ height:55px;
+ padding:8px 14px;
+ margin:10 px 0;
+}
+.main-header.logo img
+{
+border-radius: 15px;
+
+}
+
+.main-header.titles
+{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  font-style: italic;
+  text-transform: capitalize;
+
+}
+ h1
+ {
+    color:brown;
+}
+.bgimage
+{
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+.maincomponent
+{
+    display:flex;
+    border: 2px solid black;
+}
+.box
+{
+   width:250px;
+   height:250px;
+   text-align: center;
+   font-size: 2em; 
+   border-radius: 15px;
+   transition:width  2s;
+   transition-delay: 2s;
+
+   
+}
+#box1
+{
+    background-color:crimson;
+    /* transition-timing-function:linear; */
+
+}
+
+
+/* #box1:hover */
+/* { */
+    /* background-color: blue; */
+    /* width:500px; */
+/* } */
+#box2
+{
+    background-color:chartreuse;
+    /* transition-timing-function:ease-in ; */
+}
+/* #box2:hover
+{
+background-color:blue;
+width:500px;
+} */
+#box3
+{
+    background-color: aqua;
+    /* transition-timing-function:ease-out; */
+    
+}
+/* #box3:hover
+{
+background-color: chartreuse;
+width:500px;
+} */
+#box4
+{
+    background-color: crimson;
+    /* transition: 2s; */
+    /* transition-timing-function:ease-in-out; */
+}
+/* #box4:hover
+{
+    background-color: green;
+    width:500px;
+} */
+
+.newrotater
+{
+    width:150px;
+   height:150px;
+   border-radius: 15px;
+   background-color:blue;
+   transition:width  2s,height 2s,transform 3s;
+}
+#newrotater:hover
+{
+    width:500px;
+    height:250px;
+    transform:rotate(180deg);
+}
+@keyframes animid{
+from{background-color:rgb(255, 0, 38);}
+to{background-color: rgb(20, 220, 200);}
+}
+.animi
+{
+    width:160px;
+    height:160px;
+    background-color:rgb(255, 0, 25);
+    animation-name: animid;
+    animation-duration: 6s;
+
+}
+.scrolltext
+{
+ font-family: 'Franklin';   
+ font-size:25px;
+ font-style: italic;
+ width:100%;
+ white-space: nowrap;
+ color:crimson;
+ overflow: hidden;
+ box-sizing: border-box;
+ border: 2px solid rgb(138, 186, 118);
+ background-color: aquamarine;
+    
+}
+@keyframes scrolleft{
+    from{transform:translateX(100%);}
+    to{transform:translateX(-100%);}
+}
+
+.scrolltext span
+{
+ display:inline-block;
+ padding-left: 100%;
+ animation-name: scrolleft;
+ animation-duration: 20s;
+}
+.scrollright
+{
+ font-family: 'Franklin';   
+ font-size:25px;
+ font-style: italic;
+ width:100%;
+ white-space: nowrap;
+ color:blue;
+ overflow: hidden;
+ box-sizing: border-box;
+ border: 2px solid rgb(138, 186, 118);
+ background-color: brown;
+    
+}
+@keyframes scrollright{
+    from{transform:translateX(-100%);}
+    to{transform:translateX(100%);}
+}
+.scrollright span
+{
+ display:inline-block;
+ padding-right: 100%;
+ animation-name: scrollright;
+ animation-duration: 10s;
+}
+
